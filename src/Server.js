@@ -2,10 +2,10 @@ const express = require('express');
 const server = express();
 
 const dbOptions = {
-    host: 'localhost',
-    user: 'root',
-    database: 'test',
-    password: ''
+    host: 'den1.mysql1.gear.host',
+    user: 'devteam',
+    database: 'devteam',
+    password: 'Gx1l14!9328?'
 };
 
 /**
