@@ -7,8 +7,8 @@ process.on('uncaughtException', (err) => {
 });
 
 //Imports
-const server = require("./src/Server");
-const mysql = require("./src/database/Database");
+const server = require(`${__dirname}/src/Server`);
+const mysql = require(`${__dirname}/src/database/Database`);
 
 server.start([3000], {mysql: mysql}, (success, port) => {
     console.log("Server started on: " + port)
