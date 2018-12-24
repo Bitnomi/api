@@ -1,9 +1,11 @@
+require('dotenv').config({ encoding: 'base64' });
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 

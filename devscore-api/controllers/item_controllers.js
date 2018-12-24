@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
-
+var Order = require('../models/order')
 
 
 // respond with all the items
@@ -30,6 +29,9 @@ var edit_item = function(req, res, next) {
 var delete_item = function(req, res, next) {
     res.send('delete a single item');
 }
+
+
+
 
 
 
